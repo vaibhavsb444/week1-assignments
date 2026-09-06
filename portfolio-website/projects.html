@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Vaibhav Bhajantri's engineering projects — featuring offline AI virtual assistants, full stack e-commerce startups, and automated database platforms.">
+  <title>Projects Showcase | Vaibhav Bhajantri - AI/ML &amp; Full Stack</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Top Neon Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- Custom Cyber Glow Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Interactive Ambient Particle Net Canvas -->
+  <canvas id="bg-particles"></canvas>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vaibhav Bhajantri Portfolio Home">
+        <span class="brand-logo-icon">&lt;/&gt;</span>
+        <span>Vaibhav<span class="dot">.</span></span>
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="assets/resume.html" class="btn btn-sm btn-outline desktop-only" target="_blank" rel="noopener">Resume</a>
+
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+    <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+    <a href="projects.html" class="mobile-nav-link active">Projects <span>→</span></a>
+    <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    <div class="mobile-drawer-cta">
+      <a href="assets/resume.html" class="btn btn-outline" target="_blank" rel="noopener">View Resume (PDF)</a>
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </div>
+
+  <main id="main-content" style="padding-top: calc(var(--header-height) + var(--space-8));">
+    
+    <!-- Projects Header Section -->
+    <section class="section" style="padding-top: var(--space-8); padding-bottom: var(--space-8);" aria-labelledby="projects-catalog-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h1 id="projects-catalog-title" class="section-title">
+            Featured <span class="gradient-text">Engineering Projects</span>
+          </h1>
+          <p class="section-description">
+            A comprehensive gallery of end-to-end applications demonstrating machine learning models, edge IoT hardware integration, full-stack startups, and real-time automation.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-wrapper reveal-up delay-1" role="toolbar" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" data-filter="ai-hardware" aria-pressed="false">AI &amp; Hardware</button>
+          <button class="filter-btn" data-filter="fullstack" aria-pressed="false">Full Stack &amp; Web Apps</button>
+          <button class="filter-btn" data-filter="automation" aria-pressed="false">Automation &amp; IoT</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- Project 1: AIVA -->
+          <article class="project-card tilt-card reveal-up" data-tilt="true" data-category="ai-hardware automation" data-accent="ai">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-aiva.svg" alt="AIVA - Artificial Intelligent Virtual Assistant Interface" loading="lazy">
+              <span class="project-category-badge">AI &amp; Edge Hardware</span>
+            </div>
+            <div class="project-body">
+              <h2 class="project-title">AIVA - Artificial Intelligent Virtual Assistant</h2>
+              <p class="project-description">
+                An offline, voice-interactive AI campus assistant with a customized male persona. Built to run local Large Language Models (Ollama/Qwen) directly on a Raspberry Pi 4, delivering institutional guidance and digital navigation with 100% offline privacy and zero cloud dependence.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Offline LLMs (Ollama/Qwen)</span>
+                <span class="tech-tag">Raspberry Pi</span>
+                <span class="tech-tag">Speech Recognition</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+              <div class="project-actions">
+                <span class="btn btn-sm btn-primary" style="opacity: 0.9; cursor: default;">Active Development</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Clodhi.com -->
+          <article class="project-card tilt-card reveal-up delay-1" data-tilt="true" data-category="fullstack" data-accent="fullstack">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-clodhi.svg" alt="Clodhi.com Streetwear E-Commerce Platform" loading="lazy">
+              <span class="project-category-badge">Full Stack Startup</span>
+            </div>
+            <div class="project-body">
+              <h2 class="project-title">Clodhi.com - Streetwear E-Commerce Startup</h2>
+              <p class="project-description">
+                A modern streetwear e-commerce brand platform founded, developed, and deployed end-to-end. Includes seamless Firebase authentication, dynamic cart drawer, fast client-side navigation, and custom domain configuration on Vercel's global edge network.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Firebase Auth</span>
+                <span class="tech-tag">Vercel Edge</span>
+                <span class="tech-tag">CSS Modules</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://clodhi.com" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                  Live Storefront
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Exam Block Allotment -->
+          <article class="project-card tilt-card reveal-up delay-2" data-tilt="true" data-category="fullstack automation" data-accent="automation">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-allotment.svg" alt="Automatic Exam Block Allotment System" loading="lazy">
+              <span class="project-category-badge">Web App &amp; Automation</span>
+            </div>
+            <div class="project-body">
+              <h2 class="project-title">Automatic Exam Block Allotment System</h2>
+              <p class="project-description">
+                An automated examination allocation platform designed to replace manual seating arrangements. Integrates real-time database synchronizations and Twilio SMS notifications to automatically assign exam halls and notify students, dramatically reducing administrative errors.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Twilio SMS API</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">Relational DB</span>
+              </div>
+              <div class="project-actions">
+                <span class="btn btn-sm btn-primary" style="opacity: 0.9; cursor: default;">System Prototype</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: VisionPulse -->
+          <article class="project-card tilt-card reveal-up delay-3" data-tilt="true" data-category="ai-hardware automation" data-accent="vision">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-vision.svg" alt="VisionPulse Real-Time Object &amp; Gesture Detection" loading="lazy">
+              <span class="project-category-badge">Computer Vision &amp; AI</span>
+            </div>
+            <div class="project-body">
+              <h2 class="project-title">VisionPulse: Neural Vision &amp; Gesture Tracker</h2>
+              <p class="project-description">
+                A high-speed computer vision telemetry engine built using PyTorch and OpenCV. Captures live video feeds from an ESP32-CAM WiFi module to perform real-time bounding box object detection, hand gesture recognition, and pose tracking at 60 FPS with low-latency inference.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">ESP32-CAM</span>
+                <span class="tech-tag">IoT Stream</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                  Explore Code
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Connect Banner -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color);">
+      <div class="container" style="text-align: center;">
+        <h2 class="section-title reveal-up">Have a Project in Mind or Hiring for Tech Roles?</h2>
+        <p class="section-description reveal-up delay-1" style="max-width: 580px; margin: 0 auto 1.5rem auto;">
+          Whether you need an AI/ML developer for edge hardware prototypes, a full-stack engineer for scalable web platforms, or an intern ready to learn and execute, let's connect.
+        </p>
+        <div class="reveal-up delay-2">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Vaibhav Bhajantri Home">
+            <span class="brand-logo-icon">&lt;/&gt;</span>
+            <span>Vaibhav<span class="dot">.</span></span>
+          </a>
+          <p>AI/ML Engineer &amp; Full Stack Developer dedicated to building localized intelligent systems, offline LLM applications, and modern web experiences.</p>
+          <div class="footer-social-grid">
+            <a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            <a href="https://linkedin.com/in/vaibhav-bhajantri" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="mailto:vaibhavbajantri1@gmail.com" class="social-icon-btn" aria-label="Email Vaibhav"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="assets/resume.html" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+            <li><a href="projects.html">Case Studies</a></li>
+            <li><a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener">GitHub Repositories</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Status</h4>
+          <div class="footer-bottom-badge" style="margin-bottom: 0.75rem;">
+            <span class="pulse-dot"></span>
+            <span style="font-weight: 600; color: var(--text-primary);">Open for Roles</span>
+          </div>
+          <p style="font-size: var(--font-size-xs); color: var(--text-muted); line-height: 1.5;">
+            Available for Internships and Junior AI/ML &amp; Full Stack Software Developer opportunities. Based in Pune, Maharashtra (Open to Remote / Hybrid).
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vaibhav Bhajantri. Built with semantic HTML5, CSS Variables &amp; Lenis Smooth Scroll.</div>
+        <div><span>Engineering: AI/ML &amp; Full Stack</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lenis.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

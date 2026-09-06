@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="aura-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="orb-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="orb-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#aura-bg)" />
+
+  <!-- App Window Frame -->
+  <rect x="40" y="30" width="720" height="420" rx="12" fill="#121214" stroke="#27272a" stroke-width="1.5" />
+  
+  <!-- Browser Chrome -->
+  <path d="M 40 42 C 40 35.37 45.37 30 52 30 L 748 30 C 754.63 30 760 35.37 760 42 L 760 70 L 40 70 Z" fill="#18181b" />
+  <circle cx="65" cy="50" r="5" fill="#ef4444" />
+  <circle cx="82" cy="50" r="5" fill="#f59e0b" />
+  <circle cx="99" cy="50" r="5" fill="#10b981" />
+  <rect x="150" y="42" width="280" height="16" rx="8" fill="#121214" />
+  <text x="170" y="54" fill="#71717a" font-family="system-ui, sans-serif" font-size="10">aurastudio.design</text>
+
+  <!-- Content of Studio Landing -->
+  <rect x="70" y="90" width="660" height="340" rx="10" fill="#18181b" />
+  
+  <!-- Glowing Abstract Orbs -->
+  <circle cx="560" cy="220" r="90" fill="url(#orb-1)" opacity="0.65" filter="blur(25px)" />
+  <circle cx="480" cy="280" r="70" fill="url(#orb-2)" opacity="0.5" filter="blur(20px)" />
+
+  <!-- Studio Header -->
+  <text x="100" y="140" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="11" letter-spacing="3">AURA CREATIVE STUDIO</text>
+  <text x="100" y="200" fill="#ffffff" font-family="system-ui, sans-serif" font-size="34" font-weight="900" letter-spacing="-1">Pure Emotion.</text>
+  <text x="100" y="240" fill="#ffffff" font-family="system-ui, sans-serif" font-size="34" font-weight="900" letter-spacing="-1">Digital Mastery.</text>
+  <text x="100" y="280" fill="#a1a1aa" font-family="system-ui, sans-serif" font-size="13" max-width="320">Crafting brand identities and high-end web experiences.</text>
+
+  <!-- CTA buttons -->
+  <rect x="100" y="320" width="130" height="38" rx="19" fill="#ffffff" />
+  <text x="128" y="344" fill="#000000" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">View Case Study</text>
+  
+  <rect x="245" y="320" width="110" height="38" rx="19" fill="transparent" stroke="#3f3f46" stroke-width="1.5" />
+  <text x="265" y="344" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Our Work →</text>
+
+  <!-- Showcase Cards in corner -->
+  <rect x="460" y="140" width="220" height="150" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" backdrop-filter="blur(10px)" />
+  <circle cx="490" cy="170" r="14" fill="#818cf8" />
+  <text x="515" y="174" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Arch &amp; Spatial 3D</text>
+  <text x="490" y="210" fill="#d4d4d8" font-family="system-ui, sans-serif" font-size="11">Interactive architectural showcase with WebGL &amp; GSAP.</text>
+  <text x="490" y="260" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Award of the Day ↗</text>
+</svg>

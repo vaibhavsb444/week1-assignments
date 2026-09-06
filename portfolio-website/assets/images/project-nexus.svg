@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="nexus-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="chart-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(99, 102, 241, 0.4)" />
+      <stop offset="100%" stop-color="rgba(99, 102, 241, 0.0)" />
+    </linearGradient>
+    <linearGradient id="accent-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="480" fill="url(#nexus-bg)" />
+
+  <!-- App Window Frame -->
+  <rect x="40" y="30" width="720" height="420" rx="12" fill="#111827" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Window Header / Browser Chrome -->
+  <path d="M 40 42 C 40 35.37 45.37 30 52 30 L 748 30 C 754.63 30 760 35.37 760 42 L 760 70 L 40 70 Z" fill="#1e293b" />
+  <circle cx="65" cy="50" r="5" fill="#ef4444" />
+  <circle cx="82" cy="50" r="5" fill="#f59e0b" />
+  <circle cx="99" cy="50" r="5" fill="#10b981" />
+  <rect x="150" y="42" width="280" height="16" rx="8" fill="#0f172a" />
+  <text x="170" y="54" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">nexus-analytics.cloud/dashboard</text>
+
+  <!-- Sidebar -->
+  <rect x="40" y="70" width="140" height="380" fill="#0f172a" />
+  <rect x="60" y="95" width="100" height="14" rx="4" fill="url(#accent-bar)" />
+  <rect x="60" y="130" width="80" height="10" rx="3" fill="#334155" />
+  <rect x="60" y="155" width="90" height="10" rx="3" fill="#334155" />
+  <rect x="60" y="180" width="75" height="10" rx="3" fill="#334155" />
+  <rect x="60" y="205" width="85" height="10" rx="3" fill="#334155" />
+
+  <!-- Main Dashboard View -->
+  <!-- Top KPI Cards -->
+  <rect x="200" y="90" width="165" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="215" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Total Revenue</text>
+  <text x="215" y="142" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">$128,430</text>
+  <text x="325" y="142" fill="#10b981" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">+18.2%</text>
+
+  <rect x="380" y="90" width="165" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="395" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Active Users</text>
+  <text x="395" y="142" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">42,910</text>
+  <text x="505" y="142" fill="#10b981" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">+12.4%</text>
+
+  <rect x="560" y="90" width="175" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="575" y="112" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Server Uptime</text>
+  <text x="575" y="142" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">99.98%</text>
+  <text x="690" y="142" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Optimal</text>
+
+  <!-- Big Graph Area -->
+  <rect x="200" y="180" width="535" height="230" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="220" y="208" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Real-Time Traffic &amp; Cloud Throughput</text>
+  
+  <!-- Chart Grid Lines -->
+  <line x1="220" y1="240" x2="710" y2="240" stroke="#334155" stroke-dasharray="4" />
+  <line x1="220" y1="280" x2="710" y2="280" stroke="#334155" stroke-dasharray="4" />
+  <line x1="220" y1="320" x2="710" y2="320" stroke="#334155" stroke-dasharray="4" />
+  <line x1="220" y1="360" x2="710" y2="360" stroke="#334155" stroke-dasharray="4" />
+
+  <!-- Area Gradient -->
+  <path d="M 220 360 L 220 310 Q 280 230 350 270 T 480 240 T 600 220 T 710 250 L 710 360 Z" fill="url(#chart-grad)" />
+  
+  <!-- Line stroke -->
+  <path d="M 220 310 Q 280 230 350 270 T 480 240 T 600 220 T 710 250" fill="none" stroke="#6366f1" stroke-width="3" stroke-linecap="round" />
+  <circle cx="480" cy="240" r="4.5" fill="#22d3ee" stroke="#ffffff" stroke-width="1.5" />
+  <circle cx="600" cy="220" r="4.5" fill="#6366f1" stroke="#ffffff" stroke-width="1.5" />
+</svg>

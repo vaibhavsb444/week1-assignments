@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Vaibhav Bhajantri — AI/ML Engineer &amp; Full Stack Developer, founder of Clodhi.com, competitive hackathon winner, and B.E. student at BLDEA's VP Dr. PG Halakatti CET.">
+  <title>About Me | Vaibhav Bhajantri - AI/ML Engineer &amp; Full Stack Developer</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Top Neon Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- Custom Cyber Glow Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Interactive Ambient Particle Net Canvas -->
+  <canvas id="bg-particles"></canvas>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vaibhav Bhajantri Portfolio Home">
+        <span class="brand-logo-icon">&lt;/&gt;</span>
+        <span>Vaibhav<span class="dot">.</span></span>
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="assets/resume.html" class="btn btn-sm btn-outline desktop-only" target="_blank" rel="noopener">Resume</a>
+
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+    <a href="about.html" class="mobile-nav-link active">About <span>→</span></a>
+    <a href="projects.html" class="mobile-nav-link">Projects <span>→</span></a>
+    <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    <div class="mobile-drawer-cta">
+      <a href="assets/resume.html" class="btn btn-outline" target="_blank" rel="noopener">View Resume (PDF)</a>
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </div>
+
+  <main id="main-content" style="padding-top: calc(var(--header-height) + var(--space-8));">
+    
+    <!-- Hero / Intro Header -->
+    <section class="section" style="padding-top: var(--space-8); padding-bottom: var(--space-12);" aria-labelledby="about-page-title">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: var(--space-12); align-items: center;">
+          
+          <div class="reveal-up">
+            <span class="section-tag">Profile Overview</span>
+            <h1 id="about-page-title" class="section-title">
+              Hi, I'm <span class="gradient-text">Vaibhav Bhajantri</span>. Blending AI Intelligence with Scalable Web Engineering.
+            </h1>
+            <p style="font-size: var(--font-size-md); line-height: 1.7; margin-bottom: 1.25rem;">
+              I am a dedicated software engineer currently pursuing my Bachelor of Engineering in Computer Science and Engineering (Artificial Intelligence &amp; Machine Learning) at BLDEA's V.P. Dr. P.G. Halakatti College of Engineering and Technology, holding a strong <strong>8.7 CGPA</strong>.
+            </p>
+            <p style="font-size: var(--font-size-md); line-height: 1.7; margin-bottom: 2rem;">
+              I enjoy blending hardware and software—whether it is developing localized offline AI campus assistants (like AIVA running local LLMs on Raspberry Pi) or architecting and launching full-stack e-commerce platforms like Clodhi.com. I thrive in competitive environments and hands-on projects where I can architect end-to-end solutions.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="assets/resume.html" class="btn btn-primary" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Full Resume
+              </a>
+              <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+
+          <!-- Profile Portrait Card -->
+          <div class="reveal-scale delay-1" style="display: flex; justify-content: center;">
+            <div class="hero-card tilt-card" data-tilt="true" style="width: 100%; max-width: 380px; text-align: center; border-radius: 28px;">
+              <div class="avatar-holographic-ring" style="width: 170px; height: 170px; margin: 0 auto 1.5rem auto; border-radius: 26px;">
+                <img src="assets/images/profile.jpg" alt="Vaibhav Bhajantri Portrait" style="border-radius: 22px;" onerror="this.onerror=null; this.src='assets/images/profile.png'; this.onerror=function(){this.src='assets/images/avatar.svg';};">
+              </div>
+              <h3 style="margin-bottom: 0.25rem;">Vaibhav Bhajantri</h3>
+              <p style="font-size: var(--font-size-sm); color: var(--accent-primary); font-weight: 600; margin-bottom: 1rem;">AI/ML Engineer &amp; Full Stack Developer</p>
+              
+              <div style="text-align: left; background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-md); font-size: var(--font-size-xs); display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem;">
+                <div><strong>📍 Location:</strong> Pune, Maharashtra, India</div>
+                <div><strong>🎓 Education:</strong> B.E. in CSE (AI &amp; ML) • 8.7 CGPA</div>
+                <div><strong>💼 Focus:</strong> Offline LLMs, Raspberry Pi, React, Firebase</div>
+                <div><strong>🏆 Honors:</strong> 1st Prize INVICTUS 2K25 Unity Battle</div>
+              </div>
+
+              <div style="display: flex; justify-content: center; gap: 0.6rem;">
+                <a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a href="https://linkedin.com/in/vaibhav-bhajantri" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                <a href="mailto:vaibhavbajantri1@gmail.com" class="social-icon-btn" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Interests & Engineering Values -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-labelledby="interests-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Philosophy &amp; Focus</span>
+          <h2 id="interests-title" class="section-title">What Drives My Engineering</h2>
+          <p class="section-description">Key architectural principles that guide how I design models, structure systems, and build software.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+          <article class="about-card skill-category-card tilt-card reveal-up" data-tilt="true" data-accent="ai">
+            <h3 style="margin-bottom: 0.5rem; color: var(--accent-primary);">1. Edge AI &amp; Privacy</h3>
+            <p style="font-size: var(--font-size-sm); margin: 0;">
+              Leveraging lightweight offline models like Ollama/Qwen on Raspberry Pi to build autonomous systems that work anywhere with zero external cloud dependencies.
+            </p>
+          </article>
+
+          <article class="about-card skill-category-card tilt-card reveal-up delay-1" data-tilt="true" data-accent="fullstack">
+            <h3 style="margin-bottom: 0.5rem; color: var(--accent-secondary);">2. Scalable Architecture</h3>
+            <p style="font-size: var(--font-size-sm); margin: 0;">
+              Building robust user-facing platforms using React, Vite, Firebase, and cloud-native edge deployments with clean, decoupled modular state handling.
+            </p>
+          </article>
+
+          <article class="about-card skill-category-card tilt-card reveal-up delay-2" data-tilt="true" data-accent="honors">
+            <h3 style="margin-bottom: 0.5rem; color: var(--accent-primary);">3. Competitive Innovation</h3>
+            <p style="font-size: var(--font-size-sm); margin: 0;">
+              Proven ability to architect, prototype, and defend technological systems in competitive environments—winning 1st Prize at INVICTUS 2K25 and campus expos.
+            </p>
+          </article>
+
+          <article class="about-card skill-category-card tilt-card reveal-up delay-3" data-tilt="true" data-accent="ownership">
+            <h3 style="margin-bottom: 0.5rem; color: var(--success);">4. End-to-End Ownership</h3>
+            <p style="font-size: var(--font-size-sm); margin: 0;">
+              From low-level hardware serial communication (RPi, ESP32) to production e-commerce sales funnels, taking full ownership of every layer of the technology stack.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section class="section" aria-labelledby="timeline-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Career &amp; Growth</span>
+          <h2 id="timeline-title" class="section-title">Education, Experience &amp; Honors Timeline</h2>
+          <p class="section-description">The milestones, projects, and academic achievements that define my development journey.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Item 1: Clodhi.com Founder -->
+          <div class="timeline-item reveal-up">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2026 - Present</div>
+              <h3 class="timeline-role">Founder &amp; Lead Developer</h3>
+              <div class="timeline-company">Clodhi.com • Streetwear E-Commerce Startup</div>
+              <p style="font-size: var(--font-size-sm); margin-bottom: 0.75rem;">
+                Founded and launched a streetwear e-commerce brand platform, independently developing the complete frontend using React and Vite. Managed end-to-end platform architecture, Firebase user authentication, custom domain DNS routing, and automated Vercel deployments.
+              </p>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Firebase Auth</span>
+                <span class="tech-tag">Vercel Edge</span>
+                <span class="tech-tag">E-Commerce</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Competitions & Awards -->
+          <div class="timeline-item reveal-up delay-1">
+            <div class="timeline-marker" style="background: var(--warning); border-color: var(--warning);"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025 - 2026</div>
+              <h3 class="timeline-role">Technical Competition Honors &amp; Awards</h3>
+              <div class="timeline-company">Collegiate &amp; Regional Project Competitions</div>
+              <div style="font-size: var(--font-size-sm); margin-bottom: 0.75rem; line-height: 1.6;">
+                <div style="margin-bottom: 0.4rem;">🏆 <strong>1st Prize</strong> — INVICTUS 2K25 Unity Battle</div>
+                <div style="margin-bottom: 0.4rem;">🥇 <strong>1st Prize</strong> — Model Making Competition (World Environment Day 2026)</div>
+                <div style="margin-bottom: 0.4rem;">🥇 <strong>1st Prize</strong> — 1st Semester Mini Project Exhibition</div>
+                <div>🥈 <strong>2nd Prize</strong> — 3rd Semester Mini Project Exhibition</div>
+              </div>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <span class="tech-tag">INVICTUS 2K25</span>
+                <span class="tech-tag">Model Making</span>
+                <span class="tech-tag">Hardware Prototyping</span>
+                <span class="tech-tag">Innovation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Degree -->
+          <div class="timeline-item reveal-up delay-2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022 - 2026</div>
+              <h3 class="timeline-role">B.E. in Computer Science &amp; Engineering (AI &amp; ML)</h3>
+              <div class="timeline-company">BLDEA's V.P. Dr. P.G. Halakatti College of Engineering and Technology, Vijayapura</div>
+              <p style="font-size: var(--font-size-sm); margin-bottom: 0.75rem;">
+                Focusing on Artificial Intelligence, Machine Learning Algorithms, Natural Language Processing, Computer Vision, and Software Engineering. Maintaining a consistent academic track record.
+              </p>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <span class="tech-tag" style="background: var(--success-bg); color: var(--success); font-weight: bold;">8.7 CGPA</span>
+                <span class="tech-tag">AI &amp; ML Major</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Robotics &amp; Edge IoT</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Vaibhav Bhajantri Home">
+            <span class="brand-logo-icon">&lt;/&gt;</span>
+            <span>Vaibhav<span class="dot">.</span></span>
+          </a>
+          <p>AI/ML Engineer &amp; Full Stack Developer dedicated to building localized intelligent systems, offline LLM applications, and modern web experiences.</p>
+          <div class="footer-social-grid">
+            <a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            <a href="https://linkedin.com/in/vaibhav-bhajantri" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn Profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="mailto:vaibhavbajantri1@gmail.com" class="social-icon-btn" aria-label="Email Vaibhav"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="assets/resume.html" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+            <li><a href="projects.html">Case Studies</a></li>
+            <li><a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener">GitHub Repositories</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Status</h4>
+          <div class="footer-bottom-badge" style="margin-bottom: 0.75rem;">
+            <span class="pulse-dot"></span>
+            <span style="font-weight: 600; color: var(--text-primary);">Open for Roles</span>
+          </div>
+          <p style="font-size: var(--font-size-xs); color: var(--text-muted); line-height: 1.5;">
+            Available for Internships and Junior AI/ML &amp; Full Stack Software Developer opportunities. Based in Pune, Maharashtra (Open to Remote / Hybrid).
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vaibhav Bhajantri. Built with semantic HTML5, CSS Variables &amp; Lenis Smooth Scroll.</div>
+        <div><span>Engineering: AI/ML &amp; Full Stack</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/lenis.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

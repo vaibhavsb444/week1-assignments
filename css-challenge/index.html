@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern CSS3 Showcase &mdash; Task 3: CSS Challenge</title>
+  <meta name="description" content="Task 3 CSS Challenge showcasing responsive Flexbox cards, 2D CSS Grid analytics dashboard, and GPU-accelerated CSS animations with Lenis smooth scrolling.">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lenis Smooth Scroll Engine -->
+  <script src="lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- Ambient Dynamic Cursor Follower Torch -->
+  <div class="cursor-ambient-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ======================================================================
+       STICKY LUXURY HEADER & TAB NAVIGATION
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand" aria-label="CSS Challenge Master Showcase">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>CSS Engine</span>
+        <span class="brand-badge">Spec 3.0</span>
+      </a>
+
+      <!-- Smooth Scroll Navigation Tabs -->
+      <nav aria-label="Showcase Challenge Navigation">
+        <ul class="nav-links">
+          <li><a href="#challenge-flexbox" class="nav-link active" id="nav-flexbox">1. Flexbox</a></li>
+          <li><a href="#challenge-grid" class="nav-link" id="nav-grid">2. CSS Grid</a></li>
+          <li><a href="#challenge-animations" class="nav-link" id="nav-animations">3. Animations</a></li>
+        </ul>
+      </nav>
+
+      <!-- Viewport Device Simulator (Facilitates Instant In-Browser Testing) -->
+      <div class="viewport-controls" aria-label="Device Viewport Switcher">
+        <button type="button" class="viewport-btn active" data-viewport="fluid" title="Fluid Responsive Width">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          Full
+        </button>
+        <button type="button" class="viewport-btn" data-viewport="desktop" title="Simulate Desktop (1200px)">
+          Desktop
+        </button>
+        <button type="button" class="viewport-btn" data-viewport="tablet" title="Simulate Tablet (768px)">
+          Tablet
+        </button>
+        <button type="button" class="viewport-btn" data-viewport="mobile" title="Simulate Mobile (375px)">
+          Mobile
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Viewport Simulation Wrapper -->
+  <div class="page-wrapper" id="page-wrapper">
+
+    <!-- ====================================================================
+         HERO BANNER
+         ==================================================================== -->
+    <section class="hero-section reveal-on-scroll" id="hero">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          Pure Vanilla CSS3 &bull; Lenis Physics &bull; GPU Accelerated
+        </div>
+        <h1 class="hero-title">
+          Modern Layout &amp; Motion <br>
+          <span class="gradient-text">CSS Architecture Showcase</span>
+        </h1>
+        <p class="hero-subtitle">
+          An engineering demonstration of pure CSS3 primitives featuring responsive Flexbox cards, fluid 2D CSS Grid dashboard matrices, and hardware-accelerated 60fps micro-animations with butter-smooth inertial scroll physics.
+        </p>
+
+        <!-- Tech Badges -->
+        <div class="hero-badges-row">
+          <span class="tech-chip highlight">⚡ Lenis Smooth Physics (1.8s Inertia)</span>
+          <span class="tech-chip">🎯 Dynamic Cursor Spotlight</span>
+          <span class="tech-chip">✨ Traveling Border Beams</span>
+          <span class="tech-chip">💎 3D Holographic Parallax</span>
+        </div>
+
+        <!-- Screenshot Output Target Badges -->
+        <div class="screenshot-badges">
+          <div class="screenshot-tag">📸 Screenshot 1: <span>flex-desktop.png</span></div>
+          <div class="screenshot-tag">📸 Screenshot 2: <span>flex-mobile.png</span></div>
+          <div class="screenshot-tag">📸 Screenshot 3: <span>grid-layout.png</span></div>
+          <div class="screenshot-tag">📸 Screenshot 4: <span>animation-demo.png</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CHALLENGE 1: FLEXBOX LAYOUT TASK (Feature / Testimonial Cards)
+         Screenshot Targets: flex-desktop.png & flex-mobile.png
+         ==================================================================== -->
+    <section class="challenge-section" id="challenge-flexbox">
+      <div class="container">
+
+        <!-- Section Header with Clear Screenshot Target Badge -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-header-top">
+            <div class="header-badges-cluster">
+              <span class="task-badge badge-flexbox">Task 1: Flexbox Layout</span>
+              <!-- Real-time dynamic layout state indicator -->
+              <div class="layout-status-indicator" id="flex-layout-indicator">
+                <span class="indicator-dot"></span>
+                <span id="flex-layout-text">Layout: Horizontal Row (1 Row &times; 3 Cards)</span>
+              </div>
+            </div>
+            <span class="screenshot-target-badge">
+              Target: <strong>flex-desktop.png</strong> &amp; <strong>flex-mobile.png</strong>
+            </span>
+          </div>
+          <h2 class="section-title">Responsive Feature Cards</h2>
+          <p class="section-description">
+            Arranged horizontally in a single desktop row using flexible width allocations (<code style="color: var(--accent-cyan);">flex: 1 1 0</code>), stretch alignment for equal card heights, and a seamless shift to a vertical mobile layout below 768px without breaking spacing or alignment.
+          </p>
+
+          <!-- Technical Layout Logic Callout -->
+          <div class="logic-explainer">
+            <span><strong>CSS Logic:</strong></span>
+            <code>display: flex</code>
+            <code>flex-direction: row</code>
+            <code>justify-content: space-between</code>
+            <code>align-items: stretch</code>
+            <code>gap: 2rem</code>
+            <code>flex: 1 1 0</code>
+            <code>@media (max-width: 768px) { flex-direction: column }</code>
+          </div>
+        </div>
+
+        <!-- Flexbox Container (Exactly 3 Cards) -->
+        <div class="flex-container" id="flex-container">
+
+          <!-- Flex Card 1 -->
+          <article class="flex-card spotlight-card border-beam-card reveal-on-scroll">
+            <div class="card-header-row">
+              <div class="card-icon-wrapper" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                  <path d="M12 2a10 10 0 0 1 10 10"></path>
+                  <path d="M12 12L2.5 7.5"></path>
+                </svg>
+              </div>
+              <div class="card-badge-group">
+                <span class="card-tag">Neural Tier</span>
+                <span class="flex-spec-chip">flex: 1 1 0</span>
+              </div>
+            </div>
+            <h3 class="flex-card-title">Autonomous AI Engine</h3>
+            <p class="flex-card-desc">
+              High-throughput inference cluster running optimized transformer models directly across distributed edge nodes with sub-5ms latency.
+            </p>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Zero-cold-start execution pipeline
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Adaptive quantization &amp; streaming
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Distributed FP16 neural weights
+              </li>
+            </ul>
+            <div class="card-footer-row">
+              <div class="metric-pill">
+                <span class="metric-label">Latency P99</span>
+                <span class="metric-val" data-counter="4.2" data-suffix=" ms">4.2 ms</span>
+              </div>
+              <a href="#challenge-flexbox" class="card-action-btn">
+                <span>Explore Spec</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Flex Card 2 -->
+          <article class="flex-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.1s;">
+            <div class="card-header-row">
+              <div class="card-icon-wrapper indigo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="card-badge-group">
+                <span class="card-tag">Global Mesh</span>
+                <span class="flex-spec-chip">flex: 1 1 0</span>
+              </div>
+            </div>
+            <h3 class="flex-card-title">Distributed Edge Network</h3>
+            <p class="flex-card-desc">
+              Global anycast routing fabric interconnected across 340+ points of presence, guaranteeing deterministic packet delivery worldwide.
+            </p>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Autonomous BGP route optimization
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Multi-region state synchronizer
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                120 Tbps backbone capacity
+              </li>
+            </ul>
+            <div class="card-footer-row">
+              <div class="metric-pill">
+                <span class="metric-label">Global POPs</span>
+                <span class="metric-val" data-counter="340" data-suffix="+ Hubs">340+ Hubs</span>
+              </div>
+              <a href="#challenge-flexbox" class="card-action-btn">
+                <span>Explore Spec</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Flex Card 3 -->
+          <article class="flex-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.2s;">
+            <div class="card-header-row">
+              <div class="card-icon-wrapper violet" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="card-badge-group">
+                <span class="card-tag">Zero-Trust</span>
+                <span class="flex-spec-chip">flex: 1 1 0</span>
+              </div>
+            </div>
+            <h3 class="flex-card-title">Cryptographic Shield</h3>
+            <p class="flex-card-desc">
+              Hardware-isolated confidential enclaves enforcing end-to-end post-quantum cryptographic primitives on all data in flight and at rest.
+            </p>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Post-quantum Kyber key exchange
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Real-time anomaly quarantine
+              </li>
+              <li class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                SOC2 Type II &amp; ISO-27001 verified
+              </li>
+            </ul>
+            <div class="card-footer-row">
+              <div class="metric-pill">
+                <span class="metric-label">Mitigation Rate</span>
+                <span class="metric-val" data-counter="99.99" data-suffix="%">99.99%</span>
+              </div>
+              <a href="#challenge-flexbox" class="card-action-btn">
+                <span>Explore Spec</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CHALLENGE 2: GRID LAYOUT TASK (Dashboard / Gallery Grid)
+         Screenshot Target: grid-layout.png
+         ==================================================================== -->
+    <section class="challenge-section" id="challenge-grid">
+      <div class="container">
+
+        <!-- Section Header with Clear Screenshot Target Badge -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-header-top">
+            <div class="header-badges-cluster">
+              <span class="task-badge badge-grid">Task 2: CSS Grid Layout</span>
+              <!-- Real-time dynamic grid state indicator -->
+              <div class="layout-status-indicator" id="grid-layout-indicator">
+                <span class="indicator-dot"></span>
+                <span id="grid-layout-text">Grid Matrix: 3 Columns &times; 2 Rows (Desktop)</span>
+              </div>
+            </div>
+            <span class="screenshot-target-badge">
+              Target: <strong>grid-layout.png</strong>
+            </span>
+          </div>
+          <h2 class="section-title">Telemetry &amp; Analytics 2D Matrix</h2>
+          <p class="section-description">
+            A two-dimensional layout that clearly demonstrates deep understanding of rows, columns, and responsive grid behavior: coordinating both axes simultaneously with fluid rearrangement across desktop (3 columns &times; 2 rows), tablet (2 columns &times; 3 rows), and mobile (1 column &times; 6 rows).
+          </p>
+
+          <!-- Technical Layout Logic Callout -->
+          <div class="logic-explainer">
+            <span><strong>CSS Grid Logic:</strong></span>
+            <code>display: grid</code>
+            <code>grid-template-columns: repeat(3, 1fr)</code>
+            <code>grid-template-rows: repeat(2, auto)</code>
+            <code>gap: 1.5rem</code>
+            <code>@media (max-width: 992px) { repeat(2, 1fr) }</code>
+            <code>@media (max-width: 640px) { 1fr }</code>
+          </div>
+        </div>
+
+        <!-- 2D Grid Mode Controls -->
+        <div class="grid-controls-row">
+          <span style="font-size: 0.825rem; color: var(--text-muted); font-family: var(--font-mono);">
+            2D Grid Track Arrangement:
+          </span>
+          <div class="grid-mode-switcher" aria-label="2D Grid Arrangement Mode">
+            <button type="button" class="grid-mode-btn active" id="btn-grid-uniform" title="Standard 3x2 Matrix">
+              ⊞ 3&times;2 Uniform Matrix
+            </button>
+            <button type="button" class="grid-mode-btn" id="btn-grid-spanning" title="2D Hero Span (Span 2 Columns)">
+              ◫ 2D Hero Spanning
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid Container (6 Distinct Cards) -->
+        <div class="grid-container" id="grid-container">
+
+          <!-- Grid Card 1: Active Edge Nodes [Row 1, Col 1] -->
+          <article class="grid-card spotlight-card border-beam-card reveal-on-scroll">
+            <div class="grid-card-head">
+              <div class="grid-card-meta">
+                <span class="grid-coord-badge">[Row 1 &bull; Column 1]</span>
+                <span class="grid-card-subtitle">Telemetry &bull; Global Fleet</span>
+                <h3 class="grid-card-title">Active Edge Nodes</h3>
+              </div>
+              <span class="status-badge live">
+                <span class="status-dot"></span> Live
+              </span>
+            </div>
+            <div class="grid-card-metric">
+              <span class="metric-large" data-counter="9482" data-suffix="">9,482</span>
+              <span class="delta-pill positive">+12.4%</span>
+            </div>
+            <div class="visual-bar-wrapper">
+              <div class="bar-track">
+                <div class="bar-fill cyan" style="width: 82%;"></div>
+              </div>
+              <div class="bar-legend">
+                <span>Provisioned: 11,500</span>
+                <span>82% Fleet Active</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid Card 2: P99 Network Latency [Row 1, Col 2] -->
+          <article class="grid-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.1s;">
+            <div class="grid-card-head">
+              <div class="grid-card-meta">
+                <span class="grid-coord-badge">[Row 1 &bull; Column 2]</span>
+                <span class="grid-card-subtitle">Real-time Performance</span>
+                <h3 class="grid-card-title">P99 Edge Latency</h3>
+              </div>
+              <span class="status-badge online">
+                <span class="status-dot"></span> Optimal
+              </span>
+            </div>
+            <div class="grid-card-metric">
+              <span class="metric-large" data-counter="8.4" data-suffix="ms">8.4<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">ms</small></span>
+              <span class="delta-pill positive">-1.8ms</span>
+            </div>
+            <div class="visual-bar-wrapper">
+              <!-- Inline SVG Sparkline -->
+              <svg class="sparkline-svg" viewBox="0 0 200 40">
+                <defs>
+                  <linearGradient id="cyan-gradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path class="sparkline-area" d="M0,35 Q30,10 60,25 T120,15 T180,8 L200,12 L200,40 L0,40 Z"/>
+                <path d="M0,35 Q30,10 60,25 T120,15 T180,8 L200,12"/>
+              </svg>
+              <div class="bar-legend">
+                <span>Avg: 9.1ms</span>
+                <span>Jitter: &lt; 0.2ms</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid Card 3: Global Ingress Throughput [Row 1, Col 3] -->
+          <article class="grid-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.2s;">
+            <div class="grid-card-head">
+              <div class="grid-card-meta">
+                <span class="grid-coord-badge">[Row 1 &bull; Column 3]</span>
+                <span class="grid-card-subtitle">Traffic Dynamics</span>
+                <h3 class="grid-card-title">Ingress Throughput</h3>
+              </div>
+              <span class="status-badge live">
+                <span class="status-dot"></span> Dynamic
+              </span>
+            </div>
+            <div class="grid-card-metric">
+              <span class="metric-large" data-counter="3.42" data-suffix="GB/s">3.42<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">GB/s</small></span>
+              <span class="delta-pill neutral">Peak</span>
+            </div>
+            <div class="visual-bar-wrapper">
+              <div class="bar-track">
+                <div class="bar-fill emerald" style="width: 68%;"></div>
+              </div>
+              <div class="bar-legend">
+                <span>Bandwidth Cap: 5.0 GB/s</span>
+                <span>68% Allocated</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid Card 4: Threat Intelligence & Shield [Row 2, Col 1] -->
+          <article class="grid-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.05s;">
+            <div class="grid-card-head">
+              <div class="grid-card-meta">
+                <span class="grid-coord-badge">[Row 2 &bull; Column 1]</span>
+                <span class="grid-card-subtitle">Perimeter Defense</span>
+                <h3 class="grid-card-title">Threat Mitigation</h3>
+              </div>
+              <span class="status-badge shield">
+                <span class="status-dot"></span> Protected
+              </span>
+            </div>
+            <div class="grid-card-metric">
+              <span class="metric-large" data-counter="99.98" data-suffix="%">99.98<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">%</small></span>
+              <span class="delta-pill positive">Zero Breach</span>
+            </div>
+            <div class="visual-bar-wrapper">
+              <div class="bar-track">
+                <div class="bar-fill violet" style="width: 99%;"></div>
+              </div>
+              <div class="bar-legend">
+                <span>DDoS Blocked: 4.2M</span>
+                <span>Anomalies: Filtered</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid Card 5: Autonomous Compute Load [Row 2, Col 2] -->
+          <article class="grid-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.15s;">
+            <div class="grid-card-head">
+              <div class="grid-card-meta">
+                <span class="grid-coord-badge">[Row 2 &bull; Column 2]</span>
+                <span class="grid-card-subtitle">Cluster Utilization</span>
+                <h3 class="grid-card-title">Neural Compute Load</h3>
+              </div>
+              <span class="status-badge live">
+                <span class="status-dot"></span> Scaling
+              </span>
+            </div>
+            <div class="grid-card-metric">
+              <span class="metric-large" data-counter="64.8" data-suffix="%">64.8<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">%</small></span>
+              <span class="delta-pill neutral">Balanced</span>
+            </div>
+            <div class="visual-bar-wrapper">
+              <div class="bar-track">
+                <div class="bar-fill cyan" style="width: 64.8%;"></div>
+              </div>
+              <div class="bar-legend">
+                <span>VRAM: 88.2 TB</span>
+                <span>Worker Threads: 16k</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grid Card 6: Uptime SLA & Cluster Health [Row 2, Col 3] -->
+          <article class="grid-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.25s;">
+            <div class="grid-card-head">
+              <div class="grid-card-meta">
+                <span class="grid-coord-badge">[Row 2 &bull; Column 3]</span>
+                <span class="grid-card-subtitle">Reliability Guarantee</span>
+                <h3 class="grid-card-title">Enterprise SLA</h3>
+              </div>
+              <span class="status-badge online">
+                <span class="status-dot"></span> 99.999%
+              </span>
+            </div>
+            <div class="grid-card-metric">
+              <span class="metric-large" data-counter="365" data-suffix="d">365<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">d</small></span>
+              <span class="delta-pill positive">100% Uptime</span>
+            </div>
+            <div class="visual-bar-wrapper">
+              <div class="bar-track">
+                <div class="bar-fill emerald" style="width: 100%;"></div>
+              </div>
+              <div class="bar-legend">
+                <span>Consecutive: 365 Days</span>
+                <span>Zero Degradation</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CHALLENGE 3: HIGH-POLISH UI ANIMATION TASK
+         Screenshot Target: animation-demo.png
+         ==================================================================== -->
+    <section class="challenge-section" id="challenge-animations">
+      <div class="container">
+
+        <!-- Section Header with Clear Screenshot Target Badge -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-header-top">
+            <span class="task-badge badge-animation">Task 3: CSS Animations</span>
+            <span class="screenshot-target-badge">
+              Target: <strong>animation-demo.png</strong>
+            </span>
+          </div>
+          <h2 class="section-title">GPU-Accelerated Motion Components</h2>
+          <p class="section-description">
+            Dedicated showcases for smooth, non-jarring UI animations built with <code style="color: var(--accent-violet);">@keyframes</code>, <code style="color: var(--accent-violet);">transform</code>, and <code style="color: var(--accent-violet);">opacity</code> for guaranteed 60fps GPU acceleration.
+          </p>
+
+          <!-- Technical Layout Logic Callout -->
+          <div class="logic-explainer" style="border-left-color: var(--accent-violet);">
+            <span><strong>CSS Logic:</strong></span>
+            <code>@keyframes gradientFlow</code>
+            <code>@keyframes radarRotate &amp; sonarPing</code>
+            <code>perspective: 1200px</code>
+            <code>transform-style: preserve-3d</code>
+            <code>translateZ() &amp; rotateX/Y</code>
+          </div>
+        </div>
+
+        <!-- 3-Component Showcase Grid -->
+        <div class="animation-showcase-grid">
+
+          <!-- Component 1: Interactive Magnetic Gradient Glow Button -->
+          <article class="animation-card spotlight-card border-beam-card reveal-on-scroll">
+            <h3 class="anim-title">Component 1</h3>
+            <span class="anim-subtitle">Magnetic Glow &amp; Light Sweep</span>
+            <div class="anim-stage">
+              <div class="glow-button-wrapper" id="magnetic-btn-wrapper">
+                <div class="glow-button-aura" aria-hidden="true"></div>
+                <button type="button" class="glow-button" id="magnetic-glow-btn">
+                  <span>Activate Engine</span>
+                  <svg class="glow-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: var(--space-md);">
+              Magnetic pull to cursor with continuous gradient flow, luminous aura bloom, and interactive shockwave click reaction.
+            </p>
+          </article>
+
+          <!-- Component 2: Radar Pulse & Orbital Infinite Spinner -->
+          <article class="animation-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.1s;">
+            <h3 class="anim-title">Component 2</h3>
+            <span class="anim-subtitle">Holographic Radar Scanner</span>
+            <div class="anim-stage">
+              <div class="radar-stage" aria-label="Infinite holographic radar scanner and dual orbital particles">
+                <!-- Concentric Target Reticles -->
+                <div class="radar-grid"></div>
+                <div class="radar-crosshair-h"></div>
+                <div class="radar-crosshair-v"></div>
+
+                <!-- Radar Active Blip Targets -->
+                <div class="radar-blip blip-1"></div>
+                <div class="radar-blip blip-2"></div>
+
+                <!-- Concentric Staggered Sonar Waves -->
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave"></div>
+
+                <!-- Rotating Conic Radar Sweep Beam -->
+                <div class="radar-sweep"></div>
+
+                <!-- Dual Opposing Orbital Rings -->
+                <div class="orbital-ring">
+                  <div class="orbital-particle"></div>
+                </div>
+                <div class="orbital-ring counter"></div>
+
+                <!-- Central Pulsing Quantum Beacon -->
+                <div class="radar-core"></div>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: var(--space-md);">
+              Multi-ring concentric sonar pings, active radar blips, 360&deg; conic sweep beam, and counter-rotating orbital rings.
+            </p>
+          </article>
+
+          <!-- Component 3: 3D Card Lift & Dynamic Specular Tilt -->
+          <article class="animation-card spotlight-card border-beam-card reveal-on-scroll" style="transition-delay: 0.2s;">
+            <h3 class="anim-title">Component 3</h3>
+            <span class="anim-subtitle">3D Parallax &amp; Iridescent Foil</span>
+            <div class="anim-stage">
+              <div class="tilt-card-wrapper" id="tilt-card-container">
+                <div class="tilt-card" id="tilt-card-inner">
+                  <div class="tilt-card-sheen"></div>
+                  <div class="tilt-card-chip"></div>
+                  <div class="tilt-card-number">4096 &bull; 8192 &bull; 2048</div>
+                  <div class="tilt-card-details">
+                    <div>
+                      <span>CLUSTER ID</span>
+                      <strong>AP-EAST-01</strong>
+                    </div>
+                    <div>
+                      <span>SECURITY</span>
+                      <strong>RSA-4096</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: var(--space-md);">
+              Spatial <code style="color: var(--accent-violet)">translateZ()</code> depth elevation, dynamic iridescent foil shimmer, and smooth gyroscope tilt.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrapper -->
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-credits">
+        <strong>Task 3: CSS Challenge</strong> &bull; Crafted with pure HTML5 &amp; CSS3 + Lenis Physics
+      </div>
+      <div class="footer-links">
+        <a href="#challenge-flexbox">Flexbox Cards</a>
+        <a href="#challenge-grid">Grid Matrix</a>
+        <a href="#challenge-animations">Motion Lab</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       CLIENT SCRIPT: LENIS SMOOTH SCROLL + DYNAMIC LAYOUT INSPECTOR
+       ====================================================================== -->
+  <script>
+    // 1. Initialize Lenis Smooth Scroll with deliberate delay and buttery inertia
+    let lenis;
+    if (typeof Lenis !== 'undefined') {
+      lenis = new Lenis({
+        duration: 1.8,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 0.9,
+        touchMultiplier: 1.5,
+        infinite: false,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            lenis.scrollTo(targetElement, { offset: -70, duration: 2.0 });
+          }
+        });
+      });
+    }
+
+    // 2. Ambient Cursor Follower Torch
+    (function initCursorFollower() {
+      const glow = document.getElementById('cursor-glow');
+      if (!glow || window.matchMedia('(max-width: 768px)').matches) return;
+
+      let mouseX = window.innerWidth / 2;
+      let mouseY = window.innerHeight / 2;
+      let curX = mouseX;
+      let curY = mouseY;
+
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function renderCursor() {
+        curX += (mouseX - curX) * 0.15;
+        curY += (mouseY - curY) * 0.15;
+        glow.style.transform = `translate(${curX}px, ${curY}px) translate(-50%, -50%)`;
+        requestAnimationFrame(renderCursor);
+      }
+      requestAnimationFrame(renderCursor);
+    })();
+
+    // 3. Dynamic Roving Mouse Spotlight on ALL Cards
+    (function initCardSpotlights() {
+      const cards = document.querySelectorAll('.spotlight-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+        });
+      });
+    })();
+
+    // 4. Scroll Reveal & Number Counter Trigger
+    (function initScrollReveals() {
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+
+            const counter = entry.target.querySelector('[data-counter]');
+            if (counter && !counter.dataset.animated) {
+              counter.dataset.animated = 'true';
+              animateCounter(counter);
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealElements.forEach(el => observer.observe(el));
+
+      function animateCounter(el) {
+        const target = parseFloat(el.getAttribute('data-counter'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        const isDecimal = target % 1 !== 0;
+        const duration = 1600;
+        const startTime = performance.now();
+
+        function step(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const easeOut = 1 - Math.pow(1 - progress, 3);
+          const current = (target * easeOut);
+          
+          if (isDecimal) {
+            el.innerHTML = current.toFixed(target >= 10 ? 2 : 1) + `<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">${suffix}</small>`;
+          } else {
+            el.textContent = Math.floor(current).toLocaleString() + suffix;
+          }
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            if (isDecimal) {
+              el.innerHTML = target + `<small style="font-size: 1rem; color: var(--text-muted); font-weight: 500;">${suffix}</small>`;
+            } else {
+              el.textContent = target.toLocaleString() + suffix;
+            }
+          }
+        }
+        requestAnimationFrame(step);
+      }
+    })();
+
+    // 5. Magnetic Button Physics & Shockwave Click Burst
+    (function initMagneticButton() {
+      const wrapper = document.getElementById('magnetic-btn-wrapper');
+      const btn = document.getElementById('magnetic-glow-btn');
+      if (!wrapper || !btn) return;
+
+      wrapper.addEventListener('mousemove', (e) => {
+        const rect = wrapper.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const deltaX = (e.clientX - centerX) * 0.35;
+        const deltaY = (e.clientY - centerY) * 0.35;
+
+        btn.style.transform = `translate(${deltaX}px, ${deltaY}px) scale(1.03)`;
+      });
+
+      wrapper.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+      });
+
+      btn.addEventListener('click', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const shockwave = document.createElement('div');
+        shockwave.className = 'click-shockwave';
+        shockwave.style.left = `${e.clientX - rect.left}px`;
+        shockwave.style.top = `${e.clientY - rect.top}px`;
+        shockwave.style.width = `${rect.width}px`;
+        shockwave.style.height = `${rect.width}px`;
+        btn.appendChild(shockwave);
+
+        setTimeout(() => shockwave.remove(), 600);
+      });
+    })();
+
+    // 6. Interactive 3D Card Mousemove Tilt Enhancement
+    (function initInteractive3DTilt() {
+      const container = document.getElementById('tilt-card-container');
+      const card = document.getElementById('tilt-card-inner');
+      if (!container || !card) return;
+
+      container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -16;
+        const rotateY = ((x - centerX) / centerX) * 16;
+
+        card.style.transform = `translateY(-12px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
+      });
+
+      container.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    })();
+
+    // 7. 2D Grid Mode Switcher (Uniform Matrix vs 2D Hero Spanning)
+    (function initGridModeSwitcher() {
+      const btnUniform = document.getElementById('btn-grid-uniform');
+      const btnSpanning = document.getElementById('btn-grid-spanning');
+      const grid = document.getElementById('grid-container');
+      if (!btnUniform || !btnSpanning || !grid) return;
+
+      btnUniform.addEventListener('click', () => {
+        btnUniform.classList.add('active');
+        btnSpanning.classList.remove('active');
+        grid.classList.remove('mode-spanning');
+        updateLayoutIndicators();
+      });
+
+      btnSpanning.addEventListener('click', () => {
+        btnSpanning.classList.add('active');
+        btnUniform.classList.remove('active');
+        grid.classList.add('mode-spanning');
+        updateLayoutIndicators();
+      });
+    })();
+
+    // 8. Real-Time Responsive Layout Status Indicators
+    function updateLayoutIndicators() {
+      const wrapper = document.getElementById('page-wrapper');
+      const flexText = document.getElementById('flex-layout-text');
+      const gridText = document.getElementById('grid-layout-text');
+      const grid = document.getElementById('grid-container');
+      if (!flexText || !gridText) return;
+
+      const effectiveWidth = wrapper.classList.contains('viewport-mobile') ? 375 :
+                             wrapper.classList.contains('viewport-tablet') ? 768 :
+                             wrapper.classList.contains('viewport-desktop') ? 1200 :
+                             window.innerWidth;
+
+      // Flexbox State:
+      if (effectiveWidth <= 768) {
+        flexText.textContent = "Layout: Vertical Column (Stacked 1-Col Mobile)";
+      } else {
+        flexText.textContent = "Layout: Horizontal Row (1 Row × 3 Cards Desktop)";
+      }
+
+      // 2D Grid State:
+      const isSpanning = grid && grid.classList.contains('mode-spanning');
+      if (effectiveWidth <= 640) {
+        gridText.textContent = "Grid: 1 Column × 6 Rows (Mobile Stack)";
+      } else if (effectiveWidth <= 992) {
+        gridText.textContent = "Grid: 2 Columns × 3 Rows (Tablet Matrix)";
+      } else {
+        if (isSpanning) {
+          gridText.textContent = "Grid: 2D Hero Span (Col 1-2 Spanned + 4 Cells)";
+        } else {
+          gridText.textContent = "Grid: 2D Matrix (3 Columns × 2 Rows Desktop)";
+        }
+      }
+    }
+
+    window.addEventListener('resize', updateLayoutIndicators);
+    updateLayoutIndicators();
+
+    // 9. Viewport Simulator Toggles (Connected with Layout Indicators)
+    (function initViewportSimulator() {
+      const buttons = document.querySelectorAll('.viewport-btn');
+      const wrapper = document.getElementById('page-wrapper');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const mode = btn.getAttribute('data-viewport');
+          wrapper.className = 'page-wrapper';
+          if (mode === 'desktop') {
+            wrapper.classList.add('viewport-desktop');
+          } else if (mode === 'tablet') {
+            wrapper.classList.add('viewport-tablet');
+          } else if (mode === 'mobile') {
+            wrapper.classList.add('viewport-mobile');
+          }
+          setTimeout(updateLayoutIndicators, 50);
+        });
+      });
+    })();
+
+    // 10. Navigation Active State on Scroll
+    (function initNavObserver() {
+      const sections = document.querySelectorAll('.challenge-section, .hero-section');
+      const navLinks = {
+        'challenge-flexbox': document.getElementById('nav-flexbox'),
+        'challenge-grid': document.getElementById('nav-grid'),
+        'challenge-animations': document.getElementById('nav-animations')
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            Object.values(navLinks).forEach(link => link && link.classList.remove('active'));
+            if (navLinks[id]) {
+              navLinks[id].classList.add('active');
+            }
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+
+      sections.forEach(s => observer.observe(s));
+    })();
+  </script>
+</body>
+</html>

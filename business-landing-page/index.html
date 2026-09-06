@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSEC interior | NextGen Solutions, Execution & Concepts</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="INSEC interior creates bespoke luxury architectural interiors, commercial environments, and custom furnishings. NextGen Solutions, Execution & Concepts.">
+  <meta name="keywords"
+    content="luxury interior design, bespoke interiors, modern architecture, INSEC interior, commercial spaces, custom furnishings">
+  <meta name="author" content="INSEC interior">
+  <meta property="og:title" content="INSEC interior | NextGen Solutions, Execution & Concepts">
+  <meta property="og:description"
+    content="Crafting luxury interiors that blend modern architecture with timeless elegance.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Montserrat (Sans-Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Custom Ambient Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Noise & Ambient Glow Overlays -->
+  <div class="ambient-glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow-bottom" aria-hidden="true"></div>
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="INSEC interior Home">
+        <span class="brand-text-full">INSEC</span>
+        <span class="logo-subtext">interior</span>
+        <span class="logo-tagline-micro">NextGen Solutions, Execution & Concepts</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary magnetic-btn" id="navCta">
+          <span class="btn-text">Book Consultation</span>
+          <span class="btn-shine" aria-hidden="true"></span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false"
+          aria-controls="mobileDrawer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <div class="drawer-header">
+        <div class="drawer-logo">
+          <span class="brand-text-full">INSEC</span>
+          <span class="logo-subtext">interior</span>
+        </div>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile Navigation">
+        <ul class="drawer-links">
+          <li><a href="#hero" class="drawer-link">Home</a></li>
+          <li><a href="#services" class="drawer-link">Services</a></li>
+          <li><a href="#philosophy" class="drawer-link">Philosophy</a></li>
+          <li><a href="#contact" class="drawer-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="drawer-footer">
+        <a href="#contact" class="btn btn-primary btn-block drawer-cta">Book Consultation</a>
+        <p class="drawer-contact-note">Direct: <a href="tel:+918080015466">+91 80800 15466</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+
+        <div class="hero-content">
+          <div class="hero-badge" id="heroBadge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Haute Couture Architectural Spaces</span>
+          </div>
+
+          <h1 class="hero-title" id="heroTitle">
+            <span class="title-line">NextGen Solutions,</span>
+            <span class="title-line gold-gradient-text">Execution & Concepts.</span>
+          </h1>
+
+          <p class="hero-description" id="heroDesc">
+            Crafting luxury interiors that blend modern architecture with timeless elegance. We transform visionary
+            blueprints into tangible sanctums of refined grandeur.
+          </p>
+
+          <div class="hero-cta-group" id="heroCtaGroup">
+            <a href="#contact" class="btn btn-primary btn-lg magnetic-btn">
+              <span class="btn-text">Book Consultation</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#services" class="btn btn-secondary btn-lg magnetic-btn">
+              <span class="btn-text">Explore Services</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges / Quick Stats -->
+          <div class="hero-stats" id="heroStats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="150">150+</span>
+              <span class="stat-label">Bespoke Spaces</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="18">18</span>
+              <span class="stat-label">Design Accolades</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="99">99%</span>
+              <span class="stat-label">Client Approval</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-wrapper" id="heroVisual">
+          <div class="hero-visual-card">
+            <div class="visual-frame">
+              <img src="assets/images/hero.jpg"
+                alt="Luxury modern dark penthouse interior with gold ambient lighting and panoramic city view"
+                class="hero-img parallax-img" loading="eager" fetchpriority="high">
+              <div class="visual-overlay" aria-hidden="true"></div>
+              <div class="visual-badge">
+                <span class="badge-tag">Penthouse Signature</span>
+                <span class="badge-sub">Obsidian & Burnished Brass</span>
+              </div>
+            </div>
+            <!-- Decorative Gold Frame Accents -->
+            <div class="frame-corner top-left" aria-hidden="true"></div>
+            <div class="frame-corner top-right" aria-hidden="true"></div>
+            <div class="frame-corner bottom-left" aria-hidden="true"></div>
+            <div class="frame-corner bottom-right" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scrollIndicator">
+        <a href="#services" aria-label="Scroll to services">
+          <span class="mouse-icon">
+            <span class="wheel"></span>
+          </span>
+          <span class="indicator-text">Scroll To Explore</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Disciplines of Distinction</span>
+          <h2 class="section-title">Our Signature <span class="gold-gradient-text">Services</span></h2>
+          <div class="gold-ornament" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-diamond">◆</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            From hyper-curated private estates to vanguard commercial headquarters, we engineer sensory environments
+            defined by precision and tactile sophistication.
+          </p>
+        </div>
+
+        <!-- 3 Feature Cards Grid -->
+        <div class="services-grid" id="servicesGrid">
+
+          <!-- Card 1: Residential Design -->
+          <article class="service-card" data-index="1">
+            <div class="card-inner">
+              <div class="card-image-wrap">
+                <img src="assets/images/service-residential.jpg"
+                  alt="Luxury residential master bedroom suite with gold strip lighting" class="card-img"
+                  loading="lazy">
+                <div class="card-badge">01 // Bespoke Living</div>
+              </div>
+              <div class="card-content">
+                <div class="card-icon-wrap" aria-hidden="true">
+                  <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </div>
+                <h3 class="card-title">Residential Design</h3>
+                <p class="card-description">
+                  Tailored sanctuaries designed around personal rituals. We integrate spatial geometry, acoustic
+                  mastery, and bespoke lighting to cultivate tranquil elegance.
+                </p>
+                <ul class="card-features">
+                  <li>Private Villas & Penthouses</li>
+                  <li>Architectural Space Planning</li>
+                  <li>Circadian Light Optimization</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="#contact" class="card-link magnetic-btn">
+                    <span>Inquire Project</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M7 7h10v10" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Commercial Spaces -->
+          <article class="service-card" data-index="2">
+            <div class="card-inner">
+              <div class="card-image-wrap">
+                <img src="assets/images/service-commercial.jpg"
+                  alt="Modern luxury corporate executive boardroom with marble table and gold ceiling lights"
+                  class="card-img" loading="lazy">
+                <div class="card-badge">02 // Corporate Vanguard</div>
+              </div>
+              <div class="card-content">
+                <div class="card-icon-wrap" aria-hidden="true">
+                  <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title">Commercial Spaces</h3>
+                <p class="card-description">
+                  Elevating enterprise presence through sculptural boardrooms, flagship retail galleries, and boutique
+                  hospitality spaces that command executive prestige.
+                </p>
+                <ul class="card-features">
+                  <li>Executive Headquarters & Suites</li>
+                  <li>Boutique Hospitality & Lounges</li>
+                  <li>Sensory Brand Architecture</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="#contact" class="card-link magnetic-btn">
+                    <span>Inquire Project</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M7 7h10v10" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Custom Furnishings -->
+          <article class="service-card" data-index="3">
+            <div class="card-inner">
+              <div class="card-image-wrap">
+                <img src="assets/images/service-furnishings.jpg"
+                  alt="Artisanal luxury custom fluted wood and marble credenza with gold brass handles" class="card-img"
+                  loading="lazy">
+                <div class="card-badge">03 // Haute Craftsmanship</div>
+              </div>
+              <div class="card-content">
+                <div class="card-icon-wrap" aria-hidden="true">
+                  <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.93 4.93 4.24 4.24"></path>
+                    <path d="m14.83 9.17 4.24-4.24"></path>
+                    <path d="m14.83 14.83 4.24 4.24"></path>
+                    <path d="m9.17 14.83-4.24 4.24"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title">Custom Furnishings</h3>
+                <p class="card-description">
+                  Commissioned one-of-a-kind art pieces and tailored joinery. Handcrafted with rare Italian marble,
+                  smoked oak, and hand-patinated brass accents.
+                </p>
+                <ul class="card-features">
+                  <li>Bespoke Millwork & Casegoods</li>
+                  <li>Rare Stone & Brushed Brasswork</li>
+                  <li>Commissioned Sculptural Lighting</li>
+                </ul>
+                <div class="card-footer">
+                  <a href="#contact" class="card-link magnetic-btn">
+                    <span>Inquire Project</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M7 17L17 7M7 7h10v10" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY / ARCHITECTURAL APPROACH SECTION -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="section-container">
+
+        <div class="philosophy-layout">
+          <div class="philosophy-text-col">
+            <span class="section-eyebrow">The INSEC Methodology</span>
+            <h2 class="section-title">Rooted in <span class="gold-gradient-text">NextGen Precision</span></h2>
+
+            <p class="philosophy-p">
+              True luxury is not mere ornamentation; it is the seamless synergy of <strong>Interior</strong> intuition,
+              <strong>NextGen Solutions</strong>, flawless <strong>Execution</strong>, and vanguard
+              <strong>Concepts</strong>.
+            </p>
+
+            <div class="philosophy-pillars">
+              <div class="pillar-item">
+                <div class="pillar-num">01</div>
+                <div class="pillar-info">
+                  <h4>NextGen Concepts</h4>
+                  <p>Translating avant-garde architectural philosophies into immersive, functional living environments.
+                  </p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-num">02</div>
+                <div class="pillar-info">
+                  <h4>Uncompromising Execution</h4>
+                  <p>Meticulous master craftsmanship with zero tolerance for deviation from engineering precision.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-num">03</div>
+                <div class="pillar-info">
+                  <h4>Sensory Materials</h4>
+                  <p>Hand-selected stones, brushed metals, and acoustic textures curated to invoke effortless prestige.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="philosophy-quote-col">
+            <div class="luxury-quote-card">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote class="quote-text">
+                Architecture and interior design are the quiet stages upon which humanity's most elevated moments
+                unfold. We construct those stages with unyielding reverence for perfection.
+              </blockquote>
+              <div class="quote-author">
+                <div class="author-avatar">
+                  <span class="avatar-initials">IS</span>
+                </div>
+                <div class="author-meta">
+                  <span class="author-name">INSEC Architectural Studio</span>
+                  <span class="author-role">Design Director & Principal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT FORM (LEAD GEN) SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+
+        <div class="contact-wrapper">
+
+          <!-- Contact Details / Studio Concierge -->
+          <div class="contact-info-col" id="contactInfo">
+            <span class="section-eyebrow">Direct Engagement</span>
+            <h2 class="section-title">Initiate Your <br><span class="gold-gradient-text">Private Consultation</span>
+            </h2>
+            <p class="contact-lead-text">
+              We welcome commissions for prestigious private residences, executive offices, and signature developments
+              globally.
+            </p>
+
+            <div class="contact-meta-list">
+              <div class="meta-item">
+                <div class="meta-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Studio & Office Address</span>
+                  <p class="meta-val">
+                    Shop No. 10, Opp. Oxygen Valley Building,<br>
+                    Anna Saheb Magar Bhaji Mandi, Manjri, Hadapsar,<br>
+                    Maharashtra, India
+                  </p>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <div class="meta-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Direct Phone & WhatsApp</span>
+                  <p class="meta-val"><a href="tel:+918080015466" class="contact-link">+91 80800 15466</a></p>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <div class="meta-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Direct Inquiries</span>
+                  <p class="meta-val"><a href="mailto:insec24hours@gmail.com"
+                      class="contact-link">insec24hours@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="meta-item">
+                <div class="meta-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Official Instagram</span>
+                  <p class="meta-val"><a href="https://www.instagram.com/insec_interior" target="_blank"
+                      rel="noopener noreferrer" class="contact-link">@insecinterior</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="studio-badge">
+              <span class="studio-status-indicator"></span>
+              <span class="studio-status-text">Studio Currently Accepting Commissions</span>
+            </div>
+          </div>
+
+          <!-- Interactive Lead Generation Form -->
+          <div class="contact-form-col" id="contactFormCol">
+            <div class="form-card-glass">
+              <div class="form-header">
+                <h3>Schedule Private Briefing</h3>
+                <p>Complete the brief below and our principal architect will connect within 24 hours.</p>
+              </div>
+
+              <form id="leadGenForm" class="luxury-form" novalidate>
+
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <input type="text" id="fullName" name="name" class="form-control"
+                      placeholder="e.g. Lord Alistair Vance" required autocomplete="name">
+                    <span class="input-line"></span>
+                  </div>
+                  <span class="field-error" id="nameError">Please enter your full name.</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="emailAddr" class="form-label">Email Address <span class="req">*</span></label>
+                    <div class="input-wrap">
+                      <input type="email" id="emailAddr" name="email" class="form-control"
+                        placeholder="client@residence.com" required autocomplete="email">
+                      <span class="input-line"></span>
+                    </div>
+                    <span class="field-error" id="emailError">Please provide a valid email address.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phoneNum" class="form-label">Phone Number <span class="req">*</span></label>
+                    <div class="input-wrap">
+                      <input type="tel" id="phoneNum" name="phone" class="form-control" placeholder="+1 (555) 000-0000"
+                        required autocomplete="tel">
+                      <span class="input-line"></span>
+                    </div>
+                    <span class="field-error" id="phoneError">Please provide a valid phone number.</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectType" class="form-label">Project Scope</label>
+                  <div class="input-wrap select-wrap">
+                    <select id="projectType" name="projectType" class="form-control select-control">
+                      <option value="residential">Bespoke Residential Residence / Penthouse</option>
+                      <option value="commercial">Commercial Space / Executive Headquarters</option>
+                      <option value="furnishings">Custom Furnishings & Commissioned Joinery</option>
+                      <option value="full-turnkey">Full Architectural & Interior Turnkey</option>
+                    </select>
+                    <span class="select-arrow">▼</span>
+                    <span class="input-line"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectDetails" class="form-label">Project Details & Vision</label>
+                  <div class="input-wrap">
+                    <textarea id="projectDetails" name="details" class="form-control textarea-control" rows="4"
+                      placeholder="Describe the space, square footage, aesthetic goals, or desired timeline..."></textarea>
+                    <span class="input-line"></span>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-block btn-lg magnetic-btn" id="submitBtn">
+                    <span class="btn-text">Submit Private Inquiry</span>
+                    <span class="btn-spinner" aria-hidden="true"></span>
+                  </button>
+                </div>
+
+                <p class="form-privacy-notice">
+                  Strict client confidentiality guaranteed. Your information is protected by non-disclosure protocols.
+                </p>
+
+                <!-- Feedback Message Overlay -->
+                <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="brand-text-full">INSEC</span>
+            <span class="logo-subtext">interior</span>
+          </a>
+          <p class="footer-tagline">
+            Interior, NextGen Solutions, Execution & Concepts.<br>
+            Manjri Hadapsar, Maharashtra, India.
+          </p>
+          <div class="footer-contact-quick">
+            <p><strong>Phone:</strong> <a href="tel:+918080015466">+91 80800 15466</a></p>
+            <p><strong>Email:</strong> <a href="mailto:insec24hours@gmail.com">insec24hours@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/insec_interior" target="_blank"
+                rel="noopener noreferrer">@insec_interior</a></p>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#philosophy">Philosophy</a></li>
+              <li><a href="#contact">Private Consultation</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Disciplines</h4>
+            <ul>
+              <li><a href="#services">Residential Design</a></li>
+              <li><a href="#services">Commercial Spaces</a></li>
+              <li><a href="#services">Custom Furnishings</a></li>
+              <li><a href="#services">Artisanal Lighting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Studio Location</h4>
+            <ul>
+              <li>Shop No. 10, Opp. Oxygen Valley</li>
+              <li>Anna Saheb Magar Bhaji Mandi</li>
+              <li>Manjri, Hadapsar</li>
+              <li>Maharashtra, India</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="currentYear">2026</span> INSEC interior. All Rights Reserved. Crafted for Architectural
+          Distinction.
+        </p>
+
+        <div class="footer-actions">
+          <a href="#hero" class="back-to-top magnetic-btn" id="backToTop" aria-label="Return to top of page">
+            <span>Back To Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lenis Smooth Scroll CDN -->
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>

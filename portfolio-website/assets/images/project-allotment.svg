@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="allot-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#111d3d" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="allot-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#allot-bg)" />
+
+  <!-- App Window Container -->
+  <rect x="40" y="30" width="720" height="420" rx="14" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Window Chrome Header -->
+  <path d="M 40 44 C 40 36.27 46.27 30 54 30 L 746 30 C 753.73 30 760 36.27 760 44 L 760 72 L 40 72 Z" fill="#172554" />
+  <circle cx="65" cy="51" r="5" fill="#ef4444" />
+  <circle cx="82" cy="51" r="5" fill="#f59e0b" />
+  <circle cx="99" cy="51" r="5" fill="#10b981" />
+  <rect x="150" y="43" width="310" height="18" rx="9" fill="#0f172a" />
+  <text x="170" y="56" fill="#38bdf8" font-family="monospace" font-size="10.5">exam-allotment.portal/admin/live-matrix [PHP+Twilio]</text>
+
+  <!-- Status Bar -->
+  <rect x="615" y="43" width="125" height="18" rx="9" fill="#064e3b" />
+  <text x="625" y="55" fill="#6ee7b7" font-family="sans-serif" font-size="9.5" font-weight="bold">● SMS BROADCAST ON</text>
+
+  <!-- Top KPI Cards -->
+  <g transform="translate(65, 90)">
+    <rect width="155" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="15" y="24" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="bold">TOTAL CANDIDATES</text>
+    <text x="15" y="50" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="800">1,240</text>
+  </g>
+
+  <g transform="translate(235, 90)">
+    <rect width="155" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="15" y="24" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="bold">EXAM HALLS</text>
+    <text x="15" y="50" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="20" font-weight="800">32 Blocks</text>
+  </g>
+
+  <g transform="translate(405, 90)">
+    <rect width="155" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="15" y="24" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="bold">FACULTY INVIGILATORS</text>
+    <text x="15" y="50" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="20" font-weight="800">64 Assigned</text>
+  </g>
+
+  <g transform="translate(575, 90)">
+    <rect width="160" height="65" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1" />
+    <text x="15" y="24" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="bold">SMS DELIVERY RATE</text>
+    <text x="15" y="50" fill="#10b981" font-family="system-ui, sans-serif" font-size="20" font-weight="800">99.8% Twilio</text>
+  </g>
+
+  <!-- Seating Layout Simulation (Left) -->
+  <rect x="65" y="170" width="410" height="255" rx="10" fill="#111827" stroke="#334155" stroke-width="1" />
+  <text x="85" y="198" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Block A-101: Room Layout Matrix (Real-time Firebase Sync)</text>
+
+  <!-- Desk Grid -->
+  <g fill="#1e293b" stroke="#10b981" stroke-width="1" transform="translate(85, 215)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="70" height="35" rx="4" />
+    <text x="12" y="22" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 01</text>
+    <rect x="85" y="0" width="70" height="35" rx="4" />
+    <text x="97" y="22" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 02</text>
+    <rect x="170" y="0" width="70" height="35" rx="4" />
+    <text x="182" y="22" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 03</text>
+    <rect x="255" y="0" width="70" height="35" rx="4" />
+    <text x="267" y="22" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 04</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="50" width="70" height="35" rx="4" />
+    <text x="12" y="72" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 05</text>
+    <rect x="85" y="50" width="70" height="35" rx="4" fill="#064e3b" />
+    <text x="97" y="72" fill="#6ee7b7" font-family="monospace" font-size="10">Desk 06</text>
+    <rect x="170" y="50" width="70" height="35" rx="4" />
+    <text x="182" y="72" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 07</text>
+    <rect x="255" y="50" width="70" height="35" rx="4" />
+    <text x="267" y="72" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 08</text>
+
+    <!-- Row 3 -->
+    <rect x="0" y="100" width="70" height="35" rx="4" />
+    <text x="12" y="122" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 09</text>
+    <rect x="85" y="100" width="70" height="35" rx="4" />
+    <text x="97" y="122" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 10</text>
+    <rect x="170" y="100" width="70" height="35" rx="4" fill="#064e3b" />
+    <text x="182" y="122" fill="#6ee7b7" font-family="monospace" font-size="10">Desk 11</text>
+    <rect x="255" y="100" width="70" height="35" rx="4" />
+    <text x="267" y="122" fill="#e2e8f0" font-family="monospace" font-size="10">Desk 12</text>
+  </g>
+
+  <!-- Legend -->
+  <circle cx="95" cy="395" r="4" fill="#10b981" />
+  <text x="105" y="398" fill="#94a3b8" font-family="sans-serif" font-size="10">Allocated</text>
+  <circle cx="175" cy="395" r="4" fill="#38bdf8" />
+  <text x="185" y="398" fill="#94a3b8" font-family="sans-serif" font-size="10">Faculty Desk</text>
+  <circle cx="265" cy="395" r="4" fill="#eab308" />
+  <text x="275" y="398" fill="#94a3b8" font-family="sans-serif" font-size="10">Buffer Standby</text>
+
+  <!-- Twilio SMS Stream Card (Right) -->
+  <rect x="490" y="170" width="245" height="255" rx="10" fill="#172554" stroke="#2563eb" stroke-width="1" />
+  <text x="510" y="198" fill="#93c5fd" font-family="sans-serif" font-size="12" font-weight="bold">📱 Twilio SMS Dispatcher</text>
+
+  <!-- SMS Notification 1 -->
+  <rect x="510" y="215" width="205" height="60" rx="6" fill="#0f172a" />
+  <text x="520" y="233" fill="#38bdf8" font-family="monospace" font-size="9.5">MSG ID: #TW-90218</text>
+  <text x="520" y="248" fill="#e2e8f0" font-family="sans-serif" font-size="9">USN: 2BL22AI042</text>
+  <text x="520" y="262" fill="#10b981" font-family="sans-serif" font-size="9">Allotted: Block B-204 (Desk 14)</text>
+
+  <!-- SMS Notification 2 -->
+  <rect x="510" y="285" width="205" height="60" rx="6" fill="#0f172a" />
+  <text x="520" y="303" fill="#38bdf8" font-family="monospace" font-size="9.5">MSG ID: #TW-90219</text>
+  <text x="520" y="318" fill="#e2e8f0" font-family="sans-serif" font-size="9">USN: 2BL22AI043</text>
+  <text x="520" y="332" fill="#10b981" font-family="sans-serif" font-size="9">Allotted: Block B-204 (Desk 15)</text>
+
+  <rect x="510" y="360" width="205" height="40" rx="6" fill="url(#allot-accent)" />
+  <text x="535" y="385" fill="#0f172a" font-family="sans-serif" font-size="11" font-weight="bold">⚡ AUTO-ALLOT NEXT</text>
+</svg>

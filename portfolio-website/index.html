@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Vaibhav Bhajantri — AI/ML Engineer & Full Stack Developer specializing in offline AI virtual assistants, machine learning, and scalable full-stack web platforms.">
+  <title>Vaibhav Bhajantri | AI/ML Engineer & Full Stack Developer</title>
+  
+  <!-- Favicon placeholder SVG -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Top Neon Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <!-- Custom Cyber Glow Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Interactive Ambient Particle Net Canvas -->
+  <canvas id="bg-particles"></canvas>
+
+  <!-- Accessibility: Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vaibhav Bhajantri Portfolio Home">
+        <span class="brand-logo-icon">&lt;/&gt;</span>
+        <span>Vaibhav<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="header-actions">
+        <!-- Light / Dark Theme Switcher Button -->
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <!-- Sun Icon (shown in light mode) -->
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in dark mode) -->
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume CTA Button -->
+        <a href="assets/resume.html" class="btn btn-sm btn-outline desktop-only" target="_blank" rel="noopener">
+          Resume
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Navigation Toggle Button -->
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="index.html" class="mobile-nav-link active">Home <span>→</span></a>
+    <a href="about.html" class="mobile-nav-link">About <span>→</span></a>
+    <a href="projects.html" class="mobile-nav-link">Projects <span>→</span></a>
+    <a href="contact.html" class="mobile-nav-link">Contact <span>→</span></a>
+    <div class="mobile-drawer-cta">
+      <a href="assets/resume.html" class="btn btn-outline" target="_blank" rel="noopener">View Resume (PDF)</a>
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+    
+    <!-- Hero Banner Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Introduction & CTAs -->
+          <div class="hero-content reveal-up">
+            <div class="status-pill">
+              <span class="pulse-indicator"></span>
+              Open for Internships &amp; Junior Roles
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+              Crafting <span class="gradient-text">Intelligent AI Solutions</span> &amp; Scalable Web Applications
+            </h1>
+
+            <p class="hero-subtitle">
+              Hello! I'm <strong>Vaibhav Bhajantri</strong>, an aspiring software engineer specializing in Artificial Intelligence and Machine Learning. I love building impactful projects, from offline AI robots to fully-featured web platforms like Clodhi.com.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="btn btn-primary btn-lg">
+                Explore My Work
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="contact.html" class="btn btn-secondary btn-lg">Get in Touch</a>
+              <a href="assets/resume.html" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+              </a>
+            </div>
+
+            <div class="tech-tag-group" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tech-tag">🤖 Offline LLMs &amp; Ollama</span>
+              <span class="tech-tag">🧠 PyTorch &amp; OpenCV</span>
+              <span class="tech-tag">⚛️ React &amp; Vite</span>
+              <span class="tech-tag">🔥 Firebase &amp; Full Stack</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive 3D Cyber Portrait Showcase -->
+          <div class="hero-visual reveal-scale delay-1">
+            <div class="cyber-portrait-wrapper">
+              
+              <!-- Floating Orbit Badge: Top Right -->
+              <div class="orbit-badge top-right">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>🏆 4x Winner &amp; 1st Prize</span>
+              </div>
+
+              <!-- Floating Orbit Badge: Top Left -->
+              <div class="orbit-badge top-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                <span>⚡ 8.7 CGPA Merit</span>
+              </div>
+
+              <!-- Main Interactive 3D Portrait Card -->
+              <div class="cyber-portrait-card tilt-card" data-tilt="true">
+                
+                <!-- Squircle Rounded Photo Frame with Conic Holographic Glow & Shine Sweep -->
+                <div class="cyber-photo-frame">
+                  <div class="photo-shine"></div>
+                  <img src="assets/images/profile.jpg" 
+                       alt="Vaibhav Bhajantri - AI/ML Engineer &amp; Full Stack Developer" 
+                       class="cyber-photo-img"
+                       onerror="this.onerror=null; this.src='assets/images/profile.png'; this.onerror=function(){this.src='assets/images/avatar.svg';};">
+                  
+                  <!-- In-photo Status Pill -->
+                  <div class="portrait-overlay-badge">
+                    <span class="pulse-indicator"></span>
+                    <span>AI/ML &amp; Full Stack Engineer</span>
+                  </div>
+                </div>
+
+                <!-- Identity & Location Meta Block -->
+                <div class="cyber-meta-block">
+                  <div class="cyber-meta-name">Vaibhav Bhajantri</div>
+                  <div class="cyber-meta-role">Pune, Maharashtra • Open to Remote</div>
+                </div>
+
+                <!-- Code / System Status Micro-Telemetry -->
+                <div class="hero-code-snippet">
+                  <div><span class="keyword">const</span> engineer = {</div>
+                  <div style="padding-left: 0.75rem;"><span class="property">name</span>: <span class="string">'Vaibhav Bhajantri'</span>,</div>
+                  <div style="padding-left: 0.75rem;"><span class="property">location</span>: <span class="string">'Pune, Maharashtra'</span>,</div>
+                  <div style="padding-left: 0.75rem;"><span class="property">focus</span>: [<span class="string">'Offline LLMs'</span>, <span class="string">'React'</span>, <span class="string">'PyTorch'</span>],</div>
+                  <div style="padding-left: 0.75rem;"><span class="property">status</span>: <span class="string">'Available for roles'</span></div>
+                  <div>};</div>
+                </div>
+
+                <div class="cyber-card-footer">
+                  <span>Core: Python • React • Edge AI</span>
+                  <span class="active-dot-pill">● Active in Pune</span>
+                </div>
+
+              </div>
+
+              <!-- Floating Orbit Badge: Bottom Right -->
+              <div class="orbit-badge bottom-right">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                <span>🚀 Founder Clodhi.com</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Stats / Metrics Strip -->
+        <aside class="metrics-strip reveal-up delay-2" aria-label="Key Performance Indicators">
+          <div class="metric-item tilt-card" data-tilt="true">
+            <span class="metric-number">8.7</span>
+            <span class="metric-label">CGPA Academic Excellence</span>
+          </div>
+          <div class="metric-item tilt-card" data-tilt="true">
+            <span class="metric-number">1st Prize</span>
+            <span class="metric-label">INVICTUS 2K25 Unity Battle</span>
+          </div>
+          <div class="metric-item tilt-card" data-tilt="true">
+            <span class="metric-number">Founder</span>
+            <span class="metric-label">Clodhi.com E-Commerce</span>
+          </div>
+          <div class="metric-item tilt-card" data-tilt="true">
+            <span class="metric-number">4+</span>
+            <span class="metric-label">Major AI &amp; Web Projects</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Infinite Kinetic Text Marquee -->
+    <div class="marquee-container" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="marquee-item"><span class="highlight">🤖</span> ARTIFICIAL INTELLIGENCE</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🧠</span> MACHINE LEARNING</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚡</span> OFFLINE LLMs &amp; OLLAMA</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚛️</span> REACT &amp; FULL STACK</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🚀</span> FOUNDER CLODHI.COM</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🏆</span> 1ST PRIZE INVICTUS 2K25</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🔥</span> PYTORCH &amp; OPENCV</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🌐</span> EDGE IOT &amp; RASPBERRY PI</span>
+          <span class="dot-sep">✦</span>
+        </div>
+        <div class="marquee-content">
+          <span class="marquee-item"><span class="highlight">🤖</span> ARTIFICIAL INTELLIGENCE</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🧠</span> MACHINE LEARNING</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚡</span> OFFLINE LLMs &amp; OLLAMA</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚛️</span> REACT &amp; FULL STACK</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🚀</span> FOUNDER CLODHI.COM</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🏆</span> 1ST PRIZE INVICTUS 2K25</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🔥</span> PYTORCH &amp; OPENCV</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🌐</span> EDGE IOT &amp; RASPBERRY PI</span>
+          <span class="dot-sep">✦</span>
+        </div>
+        <div class="marquee-content">
+          <span class="marquee-item"><span class="highlight">🤖</span> ARTIFICIAL INTELLIGENCE</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🧠</span> MACHINE LEARNING</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚡</span> OFFLINE LLMs &amp; OLLAMA</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚛️</span> REACT &amp; FULL STACK</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🚀</span> FOUNDER CLODHI.COM</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🏆</span> 1ST PRIZE INVICTUS 2K25</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🔥</span> PYTORCH &amp; OPENCV</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🌐</span> EDGE IOT &amp; RASPBERRY PI</span>
+          <span class="dot-sep">✦</span>
+        </div>
+        <div class="marquee-content">
+          <span class="marquee-item"><span class="highlight">🤖</span> ARTIFICIAL INTELLIGENCE</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🧠</span> MACHINE LEARNING</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚡</span> OFFLINE LLMs &amp; OLLAMA</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">⚛️</span> REACT &amp; FULL STACK</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🚀</span> FOUNDER CLODHI.COM</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🏆</span> 1ST PRIZE INVICTUS 2K25</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🔥</span> PYTORCH &amp; OPENCV</span>
+          <span class="dot-sep">✦</span>
+          <span class="marquee-item"><span class="highlight">🌐</span> EDGE IOT &amp; RASPBERRY PI</span>
+          <span class="dot-sep">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Summary Teaser Section -->
+    <section class="section" id="about-teaser" aria-labelledby="about-teaser-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">About Me</span>
+          <h2 id="about-teaser-title" class="section-title">Blending Edge AI, Hardware &amp; Modern Web Architecture</h2>
+          <p class="section-description">
+            I believe technology reaches its highest value when hardware and software harmonize—whether running localized offline LLMs on embedded devices or architecting scalable cloud-deployed e-commerce platforms.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem;">
+          <article class="about-card skill-category-card tilt-card reveal-up delay-1" data-tilt="true" data-accent="ai">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2z"></path><path d="M12 6v6l4 2"></path></svg>
+              </div>
+              <h3>Artificial Intelligence &amp; Edge ML</h3>
+            </div>
+            <p>Developing localized offline AI assistants like AIVA using Ollama and Qwen models on Raspberry Pi, speech recognition, and custom male voice synthesis with zero internet reliance.</p>
+          </article>
+
+          <article class="about-card skill-category-card tilt-card reveal-up delay-2" data-tilt="true" data-accent="fullstack">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Full Stack &amp; Startup Architecture</h3>
+            </div>
+            <p>Architecting end-to-end web applications from scratch, such as Clodhi.com, utilizing React, Vite, Firebase authentication, custom domain DNS, and Vercel edge deployment.</p>
+          </article>
+
+          <article class="about-card skill-category-card tilt-card reveal-up delay-3" data-tilt="true" data-accent="honors">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <h3>Competitive Innovation &amp; Honors</h3>
+            </div>
+            <p>Proven track record in technical competitions, securing 1st Prize at INVICTUS 2K25 Unity Battle, World Environment Day Model Making 1st Prize, and collegiate project exhibitions.</p>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-10);" class="reveal-up">
+          <a href="about.html" class="btn btn-secondary">
+            Read My Full Story &amp; Journey
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Snapshot Section -->
+    <section class="section" id="skills-overview" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-labelledby="skills-overview-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Technology Stack</span>
+          <h2 id="skills-overview-title" class="section-title">AI, Machine Learning &amp; Full Stack Stack</h2>
+          <p class="section-description">A curated toolkit focused on building intelligent models, robust web platforms, and embedded IoT hardware.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming & Core -->
+          <article class="skill-category-card tilt-card reveal-up" data-tilt="true">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>Python (AI/ML, NLP, Automation)</span><span>94%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="94%" style="width: 0%;"></div></div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>JavaScript / Modern ES6+</span><span>90%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="90%" style="width: 0%;"></div></div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>C, C++ &amp; Core Java</span><span>88%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="88%" style="width: 0%;"></div></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 2: AI & Hardware -->
+          <article class="skill-category-card tilt-card reveal-up delay-1" data-tilt="true">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              </div>
+              <h3>AI, ML &amp; Edge Hardware</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>Offline LLMs (Ollama, Qwen, NLP)</span><span>92%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="92%" style="width: 0%;"></div></div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>PyTorch, TensorFlow &amp; OpenCV</span><span>89%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="89%" style="width: 0%;"></div></div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>Raspberry Pi, ESP32 &amp; IoT</span><span>87%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="87%" style="width: 0%;"></div></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Category 3: Full Stack & Cloud -->
+          <article class="skill-category-card tilt-card reveal-up delay-2" data-tilt="true">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3>Web, Backend &amp; Cloud</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>React, Vite, HTML5 &amp; CSS3</span><span>93%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="93%" style="width: 0%;"></div></div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>Firebase, MongoDB, SQL &amp; PHP</span><span>86%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="86%" style="width: 0%;"></div></div>
+              </div>
+              <div class="skill-item-row">
+                <div class="skill-item-info"><span>Git, GitHub, Docker, REST &amp; Vercel</span><span>91%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-progress" data-progress="91%" style="width: 0%;"></div></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Showcase Section -->
+    <section class="section" id="featured-projects" aria-labelledby="featured-projects-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Featured Work</span>
+          <h2 id="featured-projects-title" class="section-title">Selected Engineering Projects</h2>
+          <p class="section-description">
+            A showcase of production-ready AI systems, full-stack startups, and real-time automation solutions.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: AIVA -->
+          <article class="project-card tilt-card reveal-up" data-tilt="true" data-accent="ai">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-aiva.svg" alt="AIVA - Artificial Intelligent Virtual Assistant Preview" loading="lazy">
+              <span class="project-category-badge">AI / Hardware</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AIVA - AI Virtual Assistant</h3>
+              <p class="project-description">
+                An offline, voice-interactive AI campus assistant running local LLMs (Ollama/Qwen) on Raspberry Pi. Provides natural institutional guidance and digital navigation with zero cloud dependency.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Offline LLMs</span>
+                <span class="tech-tag">Raspberry Pi</span>
+                <span class="tech-tag">Speech NLP</span>
+              </div>
+              <div class="project-actions">
+                <span class="btn btn-sm btn-primary" style="opacity: 0.85; cursor: default;">In Active Progress</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Clodhi.com -->
+          <article class="project-card tilt-card reveal-up delay-1" data-tilt="true" data-accent="fullstack">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-clodhi.svg" alt="Clodhi.com Streetwear E-Commerce Storefront Preview" loading="lazy">
+              <span class="project-category-badge">Full Stack Startup</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Clodhi.com E-Commerce</h3>
+              <p class="project-description">
+                A modern streetwear e-commerce startup platform founded and developed end-to-end. Features Firebase user authentication, responsive product catalog, cart drawer, and high-speed Vercel deployment.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Firebase Auth</span>
+                <span class="tech-tag">Vercel Edge</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://clodhi.com" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                  Live Preview
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Exam Block Allotment -->
+          <article class="project-card tilt-card reveal-up delay-2" data-tilt="true" data-accent="automation">
+            <div class="project-thumb-box">
+              <img src="assets/images/project-allotment.svg" alt="Automatic Exam Block Allotment System Preview" loading="lazy">
+              <span class="project-category-badge">Web Automation</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Exam Block Allotment System</h3>
+              <p class="project-description">
+                An automated collegiate examination management platform that pairs real-time databases with Twilio SMS dispatch to instantly allocate student exam blocks and eliminate seating errors.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Firebase Sync</span>
+                <span class="tech-tag">Twilio SMS API</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+              </div>
+              <div class="project-actions">
+                <span class="btn btn-sm btn-primary" style="opacity: 0.85; cursor: default;">System Prototype</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-12);" class="reveal-up">
+          <a href="projects.html" class="btn btn-lg btn-secondary">
+            View All Projects with Interactive Filtering
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-color);" aria-labelledby="cta-title">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;" class="reveal-up">
+          <span class="status-pill" style="margin-bottom: 1.25rem;">
+            <span class="pulse-indicator"></span> Ready to collaborate
+          </span>
+          <h2 id="cta-title" class="section-title" style="font-size: clamp(2rem, 3.5vw, var(--font-size-4xl));">
+            Looking for an innovative AI/ML Engineer or Full Stack Developer?
+          </h2>
+          <p class="section-description" style="margin-bottom: var(--space-8);">
+            I am actively seeking internships, junior software engineer roles, and cutting-edge project collaborations. Let's discuss how my skills in AI, machine learning, and full stack web can contribute to your team!
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary btn-lg">Send Me a Message</a>
+            <a href="assets/resume.html" class="btn btn-outline btn-lg" target="_blank" rel="noopener">Check My Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Vaibhav Bhajantri Home">
+            <span class="brand-logo-icon">&lt;/&gt;</span>
+            <span>Vaibhav<span class="dot">.</span></span>
+          </a>
+          <p>
+            AI/ML Engineer &amp; Full Stack Developer dedicated to building localized intelligent systems, offline LLM applications, and modern web experiences.
+          </p>
+          <div class="footer-social-grid">
+            <a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/vaibhav-bhajantri" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:vaibhavbajantri1@gmail.com" class="social-icon-btn" aria-label="Email Vaibhav">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div>
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="assets/resume.html" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+            <li><a href="projects.html">Case Studies</a></li>
+            <li><a href="https://github.com/vaibhavsb444" target="_blank" rel="noopener">GitHub Repositories</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Status & Availability -->
+        <div>
+          <h4 class="footer-heading">Status</h4>
+          <div class="footer-bottom-badge" style="margin-bottom: 0.75rem;">
+            <span class="pulse-dot"></span>
+            <span style="font-weight: 600; color: var(--text-primary);">Open for Roles</span>
+          </div>
+          <p style="font-size: var(--font-size-xs); color: var(--text-muted); line-height: 1.5;">
+            Available for Internships and Junior AI/ML &amp; Full Stack Software Developer opportunities. Based in Pune, Maharashtra (Open to Remote / Hybrid).
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Sub-bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Vaibhav Bhajantri. Built with semantic HTML5, CSS Variables &amp; Lenis Smooth Scroll.
+        </div>
+        <div>
+          <span>Engineering: AI/ML &amp; Full Stack</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lenis Smooth Scroll Engine -->
+  <script src="js/lenis.min.js"></script>
+  <!-- Main Application Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
